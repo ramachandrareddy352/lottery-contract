@@ -1,31 +1,6 @@
-<!-- @format -->
-
-# Foundry Smart Contract Lottery
-
-This is a section of the Cyfrin Foundry Solidity Course.
-
-*[⭐️ (3:04:09) | Lesson 9: Foundry Smart Contract Lottery](https://www.youtube.com/watch?v=sas02qSFZ74&t=11049s)*
-
-- [Foundry Smart Contract Lottery](#foundry-smart-contract-lottery)
-- [Getting Started](#getting-started)
-  - [Requirements](#requirements)
-  - [Quickstart](#quickstart)
-    - [Optional Gitpod](#optional-gitpod)
-- [Usage](#usage)
-  - [Start a local node](#start-a-local-node)
-  - [Library](#library)
-  - [Deploy](#deploy)
-  - [Deploy - Other Network](#deploy---other-network)
-  - [Testing](#testing)
-    - [Test Coverage](#test-coverage)
-- [Deployment to a testnet or mainnet](#deployment-to-a-testnet-or-mainnet)
-  - [Scripts](#scripts)
-  - [Estimate gas](#estimate-gas)
-- [Formatting](#formatting)
-- [Thank you!](#thank-you)
-
-# Getting Started
-
+## About
+- This is a simple lottery smart contract where every one can send some ethers and get the lottery ticket. For every set of time interval the picking up winner function is called automatically using **CHAINLINK KEEPERS**. There will be a ramdom number is generated using CHAINLINK random number generator and using some mathematical calculations(modulus) the winner is picked all the money is transfered to that winner.
+  
 ## Requirements
 
 - [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
@@ -36,17 +11,10 @@ This is a section of the Cyfrin Foundry Solidity Course.
 ## Quickstart
 
 ```
-git clone https://github.com/Cyfrin/foundry-smart-contract-lottery-f23
-cd foundry-smart-contract-lottery-f23
+git clone https://github.com/ramachandrareddy352/lottery-contract
+cd lottery-contract
 forge build
 ```
-
-### Optional Gitpod
-
-If you can't or don't want to run and install locally, you can work with this repo in Gitpod. If you do this, you can skip the `clone this repo` part.
-
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#github.com/Cyfrin/foundry-smart-contract-lottery-f23)
-
 # Usage
 
 ## Start a local node
@@ -167,14 +135,3 @@ To run code formatting:
 ```
 forge fmt
 ```
-
-# Thank you!
-
-If you appreciated this, feel free to follow me or donate!
-
-ETH/Arbitrum/Optimism/Polygon/etc Address: 0x9680201d9c93d65a3603d2088d125e955c73BD65
-
-[![Patrick Collins Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/PatrickAlphaC)
-[![Patrick Collins YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/channel/UCn-3f8tw_E1jZvhuHatROwA)
-[![Patrick Collins Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/patrickalphac/)
-[![Patrick Collins Medium](https://img.shields.io/badge/Medium-000000?style=for-the-badge&logo=medium&logoColor=white)](https://medium.com/@patrick.collins_58673/)
